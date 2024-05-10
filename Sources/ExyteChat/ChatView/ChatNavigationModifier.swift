@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct ChatNavigationModifier: ViewModifier {
 
     @Environment(\.presentationMode) private var presentationMode

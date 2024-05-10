@@ -13,6 +13,7 @@ enum MessageMenuAction {
     case reply
 }
 
+@available(iOS 15.0, *)
 struct MessageMenu<MainButton: View>: View {
 
     @Environment(\.chatTheme) private var theme

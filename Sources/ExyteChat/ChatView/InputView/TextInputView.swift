@@ -16,17 +16,18 @@ struct TextInputView: View {
     var availableInput: AvailableInputType
 
     var body: some View {
-        TextField("", text: $text, axis: .vertical)
-            .customFocus($globalFocusState.focus, equals: .uuid(inputFieldId))
-            .placeholder(when: text.isEmpty) {
-                Text(style.placeholder)
-                    .foregroundColor(theme.colors.buttonBackground)
-            }
-            .foregroundColor(style == .message ? theme.colors.textLightContext : theme.colors.textDarkContext)
-            .padding(.vertical, 10)
-            .padding(.leading, availableInput == .textAndAudio ? 12 : 0)
-            .onTapGesture {
-                globalFocusState.focus = .uuid(inputFieldId)
-            }
+        Text("TextField")
+//        TextField("", text: $text, axis: .vertical)
+//            .customFocus($globalFocusState.focus, equals: .uuid(inputFieldId))
+//            .placeholder(when: text.isEmpty) {
+//                Text(style.placeholder)
+//                    .foregroundColor(theme.colors.buttonBackground)
+//            }
+//            .foregroundColor(style == .message ? theme.colors.textLightContext : theme.colors.textDarkContext)
+//            .padding(.vertical, 10)
+//            .padding(.leading, availableInput == .textAndAudio ? 12 : 0)
+//            .onTapGesture {
+//                globalFocusState.focus = .uuid(inputFieldId)
+//            }
     }
 }

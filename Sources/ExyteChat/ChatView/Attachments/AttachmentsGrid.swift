@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct AttachmentsGrid: View {
     let onTap: (Attachment) -> Void
     let maxImages: Int = 4 // TODO: Make injectable
@@ -87,6 +88,7 @@ struct AttachmentsGrid: View {
     }
 }
 
+@available(iOS 15.0, *)
 private extension AttachmentsGrid {
     func pair() -> Array<AttachmentsPair> {
         return stride(from: 0, to: grid.count - 1, by: 2)
@@ -104,6 +106,7 @@ struct AttachmentsPair {
 }
 
 #if DEBUG
+@available(iOS 15.0, *)
 struct AttachmentsGrid_Preview: PreviewProvider {
     private static let examples = [1, 2, 3, 4, 5, 10]
 

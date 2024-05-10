@@ -17,6 +17,7 @@ public enum ChatType {
     case comments // input view and the latest message on top
 }
 
+@available(iOS 15.0, *)
 public struct ChatView<MessageContent: View, InputViewContent: View>: View {
 
     /// To build a custom message view use the following parameters passed by this closure:
@@ -357,6 +358,7 @@ public struct ChatView<MessageContent: View, InputViewContent: View>: View {
     }
 }
 
+@available(iOS 15.0, *)
 private extension ChatView {
     static func mapMessages(_ messages: [Message]) -> [MessagesSection] {
         guard messages.hasUniqueIDs() else {
@@ -403,6 +405,7 @@ private extension ChatView {
     }
 }
 
+@available(iOS 15.0, *)
 public extension ChatView {
 
     func chatType(_ type: ChatType) -> ChatView {
@@ -492,6 +495,7 @@ public extension ChatView {
     }
 }
 
+@available(iOS 15.0, *)
 public extension ChatView where MessageContent == EmptyView {
 
     init(messages: [Message],
@@ -504,6 +508,7 @@ public extension ChatView where MessageContent == EmptyView {
     }
 }
 
+@available(iOS 15.0, *)
 public extension ChatView where InputViewContent == EmptyView {
 
     init(messages: [Message],
@@ -516,6 +521,7 @@ public extension ChatView where InputViewContent == EmptyView {
     }
 }
 
+@available(iOS 15.0, *)
 public extension ChatView where MessageContent == EmptyView, InputViewContent == EmptyView {
 
     init(messages: [Message],

@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct AttachmentsPage: View {
 
     @EnvironmentObject var mediaPagesViewModel: FullscreenMediaPagesViewModel

@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct AvatarView: View {
 
     let url: URL?
@@ -22,6 +23,7 @@ struct AvatarView: View {
     }
 }
 
+@available(iOS 15.0, *)
 struct AvatarView_Previews: PreviewProvider {
     static var previews: some View {
         AvatarView(

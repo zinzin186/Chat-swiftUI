@@ -17,6 +17,7 @@ struct MessageTimeView: View {
     }
 }
 
+@available(iOS 15.0, *)
 struct MessageTimeWithCapsuleView: View {
 
     let text: String
@@ -37,4 +38,3 @@ struct MessageTimeWithCapsuleView: View {
             }
     }
 }
-

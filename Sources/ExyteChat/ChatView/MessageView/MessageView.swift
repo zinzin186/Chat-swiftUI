@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct MessageView: View {
 
     @Environment(\.chatTheme) private var theme
@@ -272,6 +273,7 @@ struct MessageView: View {
     }
 }
 
+@available(iOS 15.0, *)
 extension View {
 
     @ViewBuilder
@@ -293,6 +295,7 @@ extension View {
 }
 
 #if DEBUG
+@available(iOS 15.0, *)
 struct MessageView_Preview: PreviewProvider {
     static let stan = User(id: "stan", name: "Stan", avatarURL: nil, isCurrentUser: false)
     static let john = User(id: "john", name: "John", avatarURL: nil, isCurrentUser: true)

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct MessageTextView: View {
 
     let text: String?
@@ -29,6 +30,7 @@ struct MessageTextView: View {
     }
 }
 
+@available(iOS 15.0, *)
 struct MessageTextView_Previews: PreviewProvider {
     static var previews: some View {
         MessageTextView(text: "Hello world!", messageUseMarkdown: false)

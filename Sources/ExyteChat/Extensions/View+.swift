@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 extension View {
     func viewSize(_ size: CGFloat) -> some View {
         self.frame(width: size, height: size)

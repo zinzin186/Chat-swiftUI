@@ -70,6 +70,7 @@ public struct InputViewAttachments {
     public var replyMessage: ReplyMessage?
 }
 
+@available(iOS 15.0, *)
 struct InputView: View {
 
     @Environment(\.chatTheme) private var theme

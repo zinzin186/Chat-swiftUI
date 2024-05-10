@@ -8,6 +8,7 @@
 import SwiftUI
 import UIKit
 
+@available(iOS 15.0, *)
 public extension View {
 
     /// for this to work make sure all the other scrollViews have scrollsToTop = false

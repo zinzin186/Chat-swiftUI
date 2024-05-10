@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct AttachmentCell: View {
 
     @Environment(\.chatTheme) private var theme
@@ -41,6 +42,7 @@ struct AttachmentCell: View {
     }
 }
 
+@available(iOS 15.0, *)
 struct AsyncImageView: View {
 
     @Environment(\.chatTheme) var theme

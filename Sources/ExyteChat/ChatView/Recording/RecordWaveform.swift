@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct RecordWaveformWithButtons: View {
 
     @Environment(\.chatTheme) private var theme
@@ -52,6 +53,7 @@ struct RecordWaveformWithButtons: View {
     }
 }
 
+@available(iOS 15.0, *)
 struct RecordWaveformPlaying: View {
 
     var samples: [CGFloat] // 0...1
@@ -110,6 +112,7 @@ struct RecordWaveformPlaying: View {
     }
 }
 
+@available(iOS 15.0, *)
 struct RecordWaveform: View {
 
     var samples: [CGFloat] // 0...1

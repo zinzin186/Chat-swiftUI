@@ -5,6 +5,7 @@
 import Foundation
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct CustomFocus<T: Hashable>: ViewModifier {
     @Binding var binding: T
     @FocusState var focus: Bool
@@ -29,7 +30,7 @@ struct CustomFocus<T: Hashable>: ViewModifier {
             }
     }
 }
-
+@available(iOS 15.0, *)
 extension View {
     func customFocus<Value>(_ binding: Binding<Value>, equals value: Value) -> some View where Value : Hashable {
         modifier(CustomFocus(binding, equals: value))

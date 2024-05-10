@@ -9,6 +9,7 @@ import SwiftUI
 import ExyteMediaPicker
 import ActivityIndicatorView
 
+@available(iOS 15.0, *)
 struct AttachmentsEditor<InputViewContent: View>: View {
 
     typealias InputViewBuilderClosure = ChatView<EmptyView, InputViewContent>.InputViewBuilderClosure

@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "Chat",
     platforms: [
-        .iOS(.v16)
+        .iOS(.v14)
     ],
     products: [
         .library(
@@ -19,8 +19,7 @@ let package = Package(
             from: "1.0.0"
         ),
         .package(
-            url: "https://github.com/exyte/MediaPicker.git",
-            from: "2.0.0"
+            path: "/Volumes/Data/Source/Private/MediaPicker"
         ),
         .package(
             url: "https://github.com/exyte/FloatingButton",

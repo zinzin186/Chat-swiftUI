@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct ChatMessageView<MessageContent: View>: View {
 
     typealias MessageBuilderClosure = ChatView<MessageContent, EmptyView>.MessageBuilderClosure

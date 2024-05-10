@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct MessageStatusView: View {
 
     @Environment(\.chatTheme) private var theme
@@ -42,6 +43,7 @@ struct MessageStatusView: View {
     }
 }
 
+@available(iOS 15.0, *)
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {

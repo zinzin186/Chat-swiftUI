@@ -5,6 +5,7 @@
 import Foundation
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct FullscreenMediaPages: View {
 
     @Environment(\.chatTheme) private var theme
@@ -143,6 +144,7 @@ struct FullscreenMediaPages: View {
     }
 }
 
+@available(iOS 15.0, *)
 private extension FullscreenMediaPages {
     func closeSize(from size: CGSize) -> CGSize {
         CGSize(width: 0, height: max(size.height, 0))
