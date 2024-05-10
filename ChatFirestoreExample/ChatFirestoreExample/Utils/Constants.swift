@@ -7,7 +7,6 @@
 
 import SwiftUI
 import ExyteChat
-import ExyteMediaPicker
 
 struct Collection {
     static let users = "users"

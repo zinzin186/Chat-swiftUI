@@ -8,7 +8,6 @@
 import SwiftUI
 import FloatingButton
 import SwiftUIIntrospect
-import ExyteMediaPicker
 
 public struct ChatContainerView<MessageContent: View, InputViewContent: View>: View {
     public typealias MessageBuilderClosure = ((Message, PositionInGroup, @escaping (Attachment) -> Void) -> MessageContent)

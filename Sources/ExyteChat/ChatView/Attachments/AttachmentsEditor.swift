@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import ExyteMediaPicker
 import ActivityIndicatorView
 
 @available(iOS 15.0, *)

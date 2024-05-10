@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import ExyteMediaPicker
 
 public enum InputViewStyle {
     case message

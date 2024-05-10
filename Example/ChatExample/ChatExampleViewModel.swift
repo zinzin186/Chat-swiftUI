@@ -5,7 +5,6 @@
 import Foundation
 import Combine
 import ExyteChat
-import ExyteMediaPicker
 
 final class ChatExampleViewModel: ObservableObject {
     @Published var messages: [Message] = []
